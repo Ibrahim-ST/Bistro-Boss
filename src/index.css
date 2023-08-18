@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .category-css{
+        @apply text-4xl uppercase text-center mb-20 text-white -mt-16 
+    }
+}
