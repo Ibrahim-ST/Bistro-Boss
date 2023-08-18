@@ -6,4 +6,13 @@
     .category-css{
         @apply text-4xl uppercase text-center mb-20 text-white -mt-16 
     }
+
+    .subHeading{ 
+        @apply text-yellow-600 mb-2
+    }
+
+    .heading{ 
+        @apply text-3xl uppercase border-y-4 py-4
+    }
 }
+
