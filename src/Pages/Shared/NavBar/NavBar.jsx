@@ -2,29 +2,25 @@ const NavBar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Item 1</a>
-      </li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li>
-              <a>Submenu 1</a>
-            </li>
-            <li>
-              <a>Submenu 2</a>
-            </li>
-          </ul>
-        </details>
+        <a>Home</a>
+      </li>       
+      <li>
+        <a>Contact us</a>
       </li>
       <li>
-        <a>Item 3</a>
+        <a>Our Menu</a>
+      </li>
+      <li>
+        <a>Our Menu</a>
+      </li>
+      <li>
+        <a>Dashboard</a>
       </li>
     </>
   );
   return (
     <>
-      <div className="navbar fixed z-10 text-white bg-black/30 max-w-screen-xl">
+      <div className="navbar fixed z-10 text-white hover:text-white bg-black/30 max-w-screen-xl font-Inter uppercase font-bold">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,13 +46,16 @@ const NavBar = () => {
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Bistro Boss</a>
+          <div>
+          <div className="normal-case text-2xl font-Cinzel mb-0 pb-0">Bistro Boss</div> 
+          <div className="normal-case text-lg font-bold font-Cinzel mt-0 pt-0 tracking-[0.22em]">Restaurant</div>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className=" ">Sign out</a>
         </div>
       </div>
     </>

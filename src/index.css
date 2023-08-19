@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,3 +19,18 @@
     }
 }
 
+@layer utilities{ 
+    .featured-item{
+        background-image: url('./assets/home/featured.jpg');
+        opacity: 0.9;
+        background-color: #121212B3;
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+}
+
+@layer base{
+    li{
+        @apply hover:!text-white
+    }
+}

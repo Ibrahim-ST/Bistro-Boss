@@ -19,7 +19,7 @@
         "_id": "642c155b2c4774f05c36ee7c",
         "name": "Escalope de Veau",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://quick-recipe.com/wp-content/uploads/2017/12/Top-image-Recipe-page-1.jpg",
+        "image": "https://images.squarespace-cdn.com/content/v1/5755ddad45bf2169386a1ae0/1597898175919-CGFCY1EYQIR1G86UZTVQ/grilled-duck-breast.jpg?format=2500w",
         "category": "popular",
         "price": 14.5
     },
@@ -35,7 +35,7 @@
         "_id": "642c155b2c4774f05c36ee7a",
         "name": "Roast Duck Breast",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://images.squarespace-cdn.com/content/v1/5755ddad45bf2169386a1ae0/1597898175919-CGFCY1EYQIR1G86UZTVQ/grilled-duck-breast.jpg?format=2500w",
+        "image": "https://images.squarespace-cdn.com/content/v1/5755ddad45bf2169386a1ae0/1591387924793-XT2S0KQ9Q84LMG6UMUTI/oven-roasted-moulard-duck-breast.jpg?format=2500w",
         "category": "popular",
         "price": 14.5
     },
@@ -155,7 +155,7 @@
         "_id": "642c155b2c4774f05c36ee7f",
         "name": "Roasted Pork Belly",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://images.squarespace-cdn.com/content/v1/5755ddad45bf2169386a1ae0/1591387924793-XT2S0KQ9Q84LMG6UMUTI/oven-roasted-moulard-duck-breast.jpg?format=2500w",
+        "image": "https://jesspryles.com/wp-content/uploads/2021/04/IMG_8822.jpeg",
         "category": "popular",
         "price": 14.5
     },
