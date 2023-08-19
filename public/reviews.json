@@ -1,32 +1,32 @@
 [
     {
         "_id": "643010e0f5a7e52ce1e8fa65",
-        "name": "Jane Doe",
-        "details": "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "rating": 3
+        "name": "Emily Brown",
+        "details": "I have been using this product for a while now and it has exceeded my expectations. The attention to detail in its design is impressive, and it truly makes my tasks easier. The range of features it offers is comprehensive and tailored to my needs. The intuitive interface makes learning and utilizing the software a breeze. I particularly appreciate the seamless integration between different modules, which streamlines my workflow and boosts my efficiency.",
+        "rating": 4.2
     },
     {
         "_id": "643010f9f5a7e52ce1e8fa66",
-        "name": "John Doe",
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
-        "rating": 2
+        "name": "Daniel Johnson",
+        "details": "The functionality and performance of this product are outstanding. It has saved me a lot of time and effort in my daily work. The intuitive user interface, along with the seamless integration of various tools, has significantly improved my productivity. The product's responsiveness and stability give me the confidence to work on demanding projects without worrying about crashes or slowdowns. Moreover, the regular updates and new feature releases show the dedication of the development team to enhancing the user experience.",
+        "rating": 4.9
     },
     {
         "_id": "6430110af5a7e52ce1e8fa67",
-        "name": "MJ Doe",
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
-        "rating": 5
+        "name": "Sophia Miller",
+        "details": "I am extremely pleased with the results I've achieved using this product. The user interface is intuitive, and the features it offers are comprehensive. Whether I'm working on a small project or a complex task, this product adapts to my needs effortlessly. The ability to customize settings, apply advanced effects, and manage project assets efficiently has elevated the quality of my work. This product has become an essential tool in my creative arsenal.",
+        "rating": 4.8
     },
     {
         "_id": "64301123f5a7e52ce1e8fa68",
-        "name": "Sarah Smith",
-        "details": "I found the product to be incredibly useful and easy to use. The interface is intuitive, and it has all the features I need. Highly recommend it!",
-        "rating": 4
+        "name": "Ethan Davis",
+        "details": "I found the user experience of this product to be exceptional. It has improved my workflow and helped me achieve better outcomes. The ability to customize settings and access advanced features has made my work more efficient and enjoyable. Additionally, the customer support team is always ready to assist with any inquiries, demonstrating the commitment of the company to user satisfaction. From video editing to visual effects, this product empowers me to create content that stands out.",
+        "rating": 4.5
     },
     {
         "_id": "6430113af5a7e52ce1e8fa69",
-        "name": "Robert Johnson",
-        "details": "This is by far the best service I have ever used. The customer support is outstanding, and the product itself is top-notch. I couldn't be happier!",
+        "name": "Olivia White",
+        "details": "This service has surpassed my expectations in every way. The customer support team is responsive and knowledgeable, making the overall experience outstanding. From the moment I started using this product, I noticed a significant boost in my productivity and creativity. The variety of tools and features cater to both beginners and experienced professionals, allowing users to grow their skills and explore new creative possibilities. I couldn't be happier with the value this product adds to my work.",
         "rating": 5
     }
 ]
