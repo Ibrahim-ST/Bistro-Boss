@@ -7,7 +7,7 @@ const ChefService = () => {
         backgroundPosition: "top"
     }
   return (
-    <div style={bgImage} className="p-8 my-2 rounded h-full">
+    <div style={bgImage}  className=" bg-fixed p-8 my-2 rounded h-full">
       <div className="bg-white p-16 m-16 rounded-md hover:bg-slate-50">
         <h1 className="text-4xl text-center font-serif font-thin uppercase">Bistro Boss</h1>
         <p className="text-justify">Welcome to our exclusive world of culinary delight! Elevate your
