@@ -7,7 +7,7 @@ const ChefRecommends = () => {
             <SectionTitle 
             heading={"CHef recommends"}
              subHeading={"Should Try"}/>
-             //the rest will be added later on
+             {/* //the rest will be added later on */}
         </div>
     );
 };
