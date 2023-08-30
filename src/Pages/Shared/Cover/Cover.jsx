@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cover = () => {
+const Cover = ({img}) => {
   return (
     <div
       className="hero min-h-screen"
