@@ -1,18 +1,27 @@
 import React from "react";
-import bgImg from "../../../assets/home/chef-service.jpg";
 
-const ChefService = () => {
+const ChefService = ({bgImg, title, bgMode, opacity, text}) => {
     const bgImage = {
         backgroundImage: `url(${bgImg})`,
-        backgroundPosition: "top"
+        backgroundPosition: "center center"
     }
   return (
-    <div style={bgImage}  className=" bg-fixed p-8 my-2 rounded h-full">
-      <div className="bg-white p-16 m-16 rounded-md hover:bg-slate-50">
-        <h1 className="text-4xl text-center font-serif font-thin uppercase">Bistro Boss</h1>
-        <p className="text-justify">Welcome to our exclusive world of culinary delight! Elevate your
-          dining experience to new heights with our exceptional chef
-          service. Immerse yourself in a gastronomic journey tailored to your every desire. Our team of highly skilled and passionate chefs will create unforgettable moments for you and your guests. From intimate gatherings to grand celebrations, we bring the artistry of fine dining directly to your table.</p>
+    <div style={bgImage} className=" bg-fixed p-8 my-2 rounded h-full">
+      <div
+        className={`${bgMode} ${opacity} ${text}  p-16 m-16 rounded-md  `}
+      >
+        <h1 className="text-4xl text-center font-serif font-thin uppercase">
+          {title}
+        </h1>
+        <p className="text-justify">
+          Welcome to our exclusive world of culinary delight! Elevate your
+          dining experience to new heights with our exceptional chef service.
+          Immerse yourself in a gastronomic journey tailored to your every
+          desire. Our team of highly skilled and passionate chefs will create
+          unforgettable moments for you and your guests. From intimate
+          gatherings to grand celebrations, we bring the artistry of fine dining
+          directly to your table.
+        </p>
       </div>
     </div>
   );

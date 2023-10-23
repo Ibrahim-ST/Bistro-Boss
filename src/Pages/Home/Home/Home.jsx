@@ -7,24 +7,24 @@ import ChefService from "../ChefService/ChefService";
 import Featured from "../Featured/Featured";
 import PopularMenu from "../PopularMenu/PopularMenu";
 import Testimonials from "../Testimonials/Testimonials";
+import bgImg from "../../../assets/home/chef-service.jpg";
 
 
 const Home = () => {
     return (
-        <div>
-          
-          <Helmet>
-                <title>Bistro Boss | Home</title>
-            </Helmet>
-          <Banner /> 
-          <Category /> 
-          <ChefService />
-          <PopularMenu />
-          <CallUs />
-          <ChefRecommends />
-          <Featured />
-          <Testimonials />
-        </div>
+      <div>
+        <Helmet>
+          <title>Bistro Boss | Home</title>
+        </Helmet>
+        <Banner />
+        <Category />
+        <ChefService bgImg={bgImg} title={"Bistro Boss"} bgMode={"bg-white"}/>
+        <PopularMenu />
+        <CallUs />
+        <ChefRecommends />
+        <Featured />
+        <Testimonials />
+      </div>
     );
 };
 
