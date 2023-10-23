@@ -1,19 +1,22 @@
 import img from "../../../assets/restaurant.jpg";
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer p-10 bg-neutral text-neutral-content">
-        <div>
-          <img src={img} alt="" className="w-12"/>
-          <p>
-            Bistro Boss
-            <br />
-            Providing reliable tech since 1992
+    <footer className="font-Inter w-full">
+      <div className="flex text-neutral-content flex-col md:flex-row col">
+        <div className="bg-[#1F2937] w-full sm:pl-40 sm:py-16 pb-4 sm:pb-4 text-center text-white">
+          <h1 className="uppercase text-2xl">Contact Us</h1>
+          <p className="mt-2">
+            123 ABS Street, Uni 21, Bangladesh <br />
+            +88 123456789 <br />
+            Mon - Fri: 08:00 - 22:00 <br />
+            Sat - Sun: 10:00 - 23:00
           </p>
         </div>
-        <div>
-          <span className="footer-title">Connect with me</span>
-          <div className="grid grid-flow-col gap-4">
+        <div className="bg-[#111827] w-full sm:py-16 pb-4 sm:pb-2 text-center sm:text-start sm:px-40 flex flex-col gap-2 
+        text-white  ">
+          <span className="text-2xl">Follow Us</span>
+          <span className="">Join us on social media</span>
+          <div className="flex  gap-4 mx-auto sm:mx-0">
             <a href="https://wa.me/01836406502">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,9 +55,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer footer-center p-4 bg-base-300 text-base-content">
+      <div className="footer footer-center p-4 bg-black text-white text-base-content">
         <div>
-          <p>Copyright © {new Date().getFullYear()} - Ibrahim S Tanvir</p>
+          <p>Copyright © {new Date().getFullYear()} - Ibrahim S Tanvir | All Rights reserved</p>
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@ const ChefService = ({bgImg, title, bgMode, opacity, text}) => {
   return (
     <div style={bgImage} className=" bg-fixed p-8 my-2 rounded h-full">
       <div
-        className={`${bgMode} ${opacity} ${text}  p-16 m-16 rounded-md  `}
+        className={`${bgMode} ${opacity} ${text}  sm:p-16 px-2 sm:m-16 rounded-md  `}
       >
         <h1 className="text-4xl text-center font-serif font-thin uppercase">
           {title}
