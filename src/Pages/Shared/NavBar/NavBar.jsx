@@ -5,15 +5,15 @@ const NavBar = () => {
     <>
       <li>
         <Link to="/">Home</Link>
-      </li>       
+      </li>
+      <li>
+        <Link to="/menu">Menu</Link>
+      </li>
+      <li>
+        <Link to="/order">Order Food</Link>
+      </li>
       <li>
         <a>Contact us</a>
-      </li>
-      <li>
-        <Link to="/menu">Our Menu</Link>
-      </li>
-      <li>
-        <a>Our Shop</a>
       </li>
       <li>
         <a>Dashboard</a>
