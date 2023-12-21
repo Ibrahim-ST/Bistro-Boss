@@ -16,7 +16,7 @@ import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import MenuCategory from '../MenuCategory/MenuCatagory';
 
 const Menu = () => {
-    const [menu] = useMenu();
+    const [menu, loading] = useMenu();
     console.log(menu);
     const dessert = menu.filter(item => item.category ==='dessert');
     const offered = menu.filter(item => item.category ==='offered');
@@ -24,7 +24,7 @@ const Menu = () => {
     const soup = menu.filter(item => item.category ==='soup');
     const salad = menu.filter(item => item.category ==='salad');
     return (
-      <div className='mb-2'>
+      <div className="mb-2">
         <Helmet>
           <title>Bistro Boss | Menu</title>
         </Helmet>
@@ -34,8 +34,8 @@ const Menu = () => {
         <SectionTitle
           subHeading={"Don't Miss"}
           heading={"Today's offer"}
-        ></SectionTitle>
-        <MenuCategory items={offered}></MenuCategory>
+        ></SectionTitle>        
+        <MenuCategory loading={loading} items={offered}></MenuCategory>
         {/* dessert menu item  */}
         <ChefService
           bgImg={dessertImg}
@@ -44,7 +44,7 @@ const Menu = () => {
           opacity={"bg-opacity-30"}
           text={"text-white"}
         />
-        <MenuCategory items={dessert} />
+        <MenuCategory loading={loading} items={dessert} title={"dessert"} />
         {/* pizza menu item */}
         <ChefService
           bgImg={pizzaImg}
@@ -53,16 +53,16 @@ const Menu = () => {
           opacity={"bg-opacity-30"}
           text={"text-white"}
         />
-        <MenuCategory items={pizza} />
+        <MenuCategory loading={loading} items={pizza} title={"pizza"} />
         {/* salad menu item */}
         <ChefService
           bgImg={saladImg}
-          title={"Salads"}
+          title={"salads"}
           bgMode={"bg-black"}
           opacity={"bg-opacity-30"}
           text={"text-white"}
         />
-        <MenuCategory items={salad} />
+        <MenuCategory loading={loading} items={salad} title={"salad"} />
         {/* soups menu item  */}
         <ChefService
           bgImg={soupImg}
@@ -71,7 +71,7 @@ const Menu = () => {
           opacity={"bg-opacity-30"}
           text={"text-white"}
         />
-        <MenuCategory items={soup} />
+        <MenuCategory loading={loading} items={soup} title={"soup"} />
       </div>
     );
 };
