@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {
@@ -7,20 +7,28 @@ import {
   LoadCanvasTemplateNoReload,
   validateCaptcha,
 } from "react-simple-captcha";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [disabled, setDisabled] = useState(true);
+  const { signIn} = useContext(AuthContext);
+
 
   useEffect(() => {
     loadCaptchaEnginge(6);
   }, []);
+
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+    signIn(email, password).then((result) => {
+      const user = result;
+      console.log(user);
+    })
   };
 
   const handleValidateCaptcha = (e) => {
@@ -109,7 +117,7 @@ const Login = () => {
           </form>
           <p className="text-center text-[#181547] pb-2">
             <small>
-              New Here? <Link to="/admin">Create an account</Link>
+              New Here? <Link to="/register">Create an account</Link>
             </small>
           </p>
         </div>
