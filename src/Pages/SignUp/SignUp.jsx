@@ -118,47 +118,28 @@ const SignUp = () => {
                     placeholder="Confirm Password"
                     className="input input-bordered"
                   />
-                  {errors.password?.type === "required" && (
+                  {errors.confirmPassword?.type === "required" && (
                     <p className="text-red-600">Password is required</p>
                   )}
-                  {errors.password?.type === "minLength" && (
+                  {errors.confirmPassword?.type === "minLength" && (
                     <p className="text-red-600">
                       Password must be 6 characters
                     </p>
                   )}
-                  {errors.password?.type === "maxLength" && (
+                  {errors.confirmPassword?.type === "maxLength" && (
                     <p className="text-red-600">
                       Password must be less than 20 characters
                     </p>
                   )}
-                  {errors.password?.type === "pattern" && (
+                  {errors.confirmPassword?.type === "pattern" && (
                     <p className="text-red-600">
                       Password must have one Uppercase one lower case, one
                       number and one special character.
                     </p>
                   )}
-                  {errors.confPassword?.type === "required" && (
-                    <p className="text-red-600">Password is required</p>
-                  )}
-                  {errors.confPassword?.type === "minLength" && (
-                    <p className="text-red-600">
-                      Password must be 6 characters
-                    </p>
-                  )}
-                  {errors.confPassword?.type === "maxLength" && (
-                    <p className="text-red-600">
-                      Password must be less than 20 characters
-                    </p>
-                  )}
-                  {errors.confPassword?.type === "pattern" && (
-                    <p className="text-red-600">
-                      Password must have one Uppercase one lower case, one
-                      number and one special character.
-                    </p>
-                  )}
-                  {errors.confPassword && (
-                    <span className="text-red-400">
-                      {errors.confPassword.message}
+                  {errors.confirmPassword && (
+                    <span className="text-blue-400">
+                      {errors.confirmPassword.message}
                     </span>
                   )}
                 </div>
