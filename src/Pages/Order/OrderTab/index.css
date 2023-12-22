@@ -1,4 +1,4 @@
- 
+/*  
 
 body {
   background: #eee;
@@ -19,8 +19,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,4 +45,4 @@ body {
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
-}
+} */

@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .category-css{
-        @apply text-4xl uppercase text-center mb-20 text-white -mt-16 
-    }
+  .category-css {
+    @apply text-4xl uppercase text-center mb-20 text-white -mt-16;
+  }
 
-    .subHeading{ 
-        @apply text-yellow-600 mb-2
-    }
+  .subHeading {
+    @apply text-yellow-600 mb-2;
+  }
 
-    .heading{ 
-        @apply text-3xl uppercase border-y-4 py-4
-    }
+  .heading {
+    @apply text-3xl uppercase border-y-4 py-4;
+  }
+  .layout {
+    @apply px-2 py-1 md:px-16 md:py-4;
+  }
 }
 
-@layer utilities{ 
-    .featured-item{
-        background-image: url('./assets/home/featured.jpg');
-        opacity: 0.9;
-        background-color: #121212B3;
-        background-blend-mode: darken;
-        background-size: cover;
-    }
-    .AA ul li  {
-        border-bottom: 2px;
-    }
+@layer utilities {
+  .featured-item {
+    background-image: url("./assets/home/featured.jpg");
+    opacity: 0.9;
+    background-color: #121212b3;
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+  .AA ul li {
+    border-bottom: 2px;
+  }
 }
 
-@layer base{
-    li{
-        @apply hover:!text-white
-    }
-     
-
-     
+@layer base {
+  li {
+    @apply hover:!text-white;
+  }
 }

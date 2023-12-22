@@ -13,7 +13,7 @@ const NavBar = () => {
         <Link to="/order/salad">Order Food</Link>
       </li>
       <li>
-        <a>Contact us</a>
+        <Link to="/login">Login</Link>
       </li>
       <li>
         <a>Dashboard</a>
@@ -22,8 +22,8 @@ const NavBar = () => {
   );
   return (
     <>
-      <div className="navbar fixed z-10 text-white hover:text-white bg-black/30 max-w-screen-xl font-Inter uppercase font-bold">
-        <div className="navbar-start">
+      <div className="layout navbar fixed z-10 text-white hover:text-white bg-black/30  font-Inter uppercase font-bold">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -49,8 +49,12 @@ const NavBar = () => {
             </ul>
           </div>
           <div>
-          <div className="normal-case text-2xl font-Cinzel mb-0 pb-0">Bistro Boss</div> 
-          <div className="normal-case text-lg font-bold font-Cinzel mt-0 pt-0 tracking-[0.22em]">Restaurant</div>
+            <div className="normal-case text-2xl font-Cinzel mb-0 pb-0">
+              Bistro Boss
+            </div>
+            <div className="normal-case text-lg font-bold font-Cinzel mt-0 pt-0 tracking-[0.22em]">
+              Restaurant
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

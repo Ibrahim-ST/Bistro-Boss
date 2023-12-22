@@ -17,7 +17,7 @@ const Testimonials = () => {
     }, [])
     console.log(reviews)
   return (
-    <section className="my-20">
+    <section className="my-20 layout">
       <SectionTitle
         heading={"Testimonials"}
         subHeading={"What Our Clients Say"}

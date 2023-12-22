@@ -14,7 +14,7 @@ const FoodCard = ({item}) => {
           <h2 className="card-title">{name}</h2>
           <p className="p-0 m-0">{recipe}</p>
           <div className="card-actions ">
-            <button className="btn btn-outline border-b-4 hover:border-b-4 border-0 text-[#BB8506] hover:text-[#BB8506]">
+            <button className="btn btn-outline border-b-4 hover:border-b-4 border-0 text-[#BB8506] hover:text-[#BB8506] bg-slate-100">
               Add to Cart
             </button>
           </div>
