@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplate,
@@ -10,12 +10,15 @@ import {
 import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { ToastContainer, toast } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [disabled, setDisabled] = useState(true);
   const { signIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -30,6 +33,8 @@ const Login = () => {
     signIn(email, password).then((result) => {
       const user = result;
       console.log(user);
+      navigate(from, { replace: true });
+
       toast.success("User logged in 😊!", {
         position: "top-center",
         autoClose: 3000,
@@ -124,7 +129,7 @@ const Login = () => {
               {/* TODO: make button disabled for captcha */}
               <div className="form-control mt-6">
                 <input
-                  disabled={disabled}
+                  // disabled={disabled}
                   className="btn bg-[#181547ed] hover:bg-[#181547] text-white"
                   type="submit"
                   value="Login"

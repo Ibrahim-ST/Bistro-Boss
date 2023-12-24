@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -31,6 +32,9 @@ const NavBar = () => {
       </li>
       <li>
         <Link to="/order/salad">Order Food</Link>
+      </li>
+      <li>
+        <Link to="/secret">Secret</Link>
       </li>
       {user ? (
         <>
@@ -101,6 +105,18 @@ const NavBar = () => {
             </span>
           </a>
         </div>
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </>
   );
