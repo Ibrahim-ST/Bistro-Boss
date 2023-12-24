@@ -42,6 +42,9 @@ const NavBar = () => {
             <a onClick={handleLogOut}>Log Out</a>
           </li>
           <li>
+            <a className="italic shadow-md shadow-red-400">{user.displayName}</a>
+          </li>
+          <li>
             <a>Dashboard</a>
           </li>
         </>
