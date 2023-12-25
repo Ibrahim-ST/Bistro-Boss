@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useCart from '../../../hooks/useCart';
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
+  console.log({cart});
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -37,7 +40,7 @@ const NavBar = () => {
       <li>
         <Link to="/"> 
             <FaShoppingCart></FaShoppingCart>
-            <div className="badge badge-warning">+0</div>
+            <div className="badge badge-warning">+{cart?.length || 0}</div>
           
         </Link>
       </li>
@@ -52,7 +55,7 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a>Dashboard</a>
+            <Link to='/dashboard'>Dashboard</Link>
           </li>
         </>
       ) : (
